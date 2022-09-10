@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :server, Server.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "admin",
+  password: "1234",
   hostname: "localhost",
-  database: "server_dev",
+  database: "brocare_server_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
