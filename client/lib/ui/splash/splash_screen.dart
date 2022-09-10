@@ -1,8 +1,26 @@
 import 'package:client/app/core/colors.dart';
+import 'package:client/ui/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  initState() {
+    super.initState();
+
+    Future.delayed(const Duration(milliseconds: 1500), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +28,7 @@ class SplashScreen extends StatelessWidget {
       body: SafeArea(
           child: Container(
         color: clrBlack,
-        padding: EdgeInsets.all(30),
+        padding: const EdgeInsets.all(30),
         child: Column(
           children: const [
             Expanded(
