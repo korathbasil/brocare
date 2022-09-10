@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
       body: SafeArea(
           child: Container(
         color: clrBlack,
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(30),
         child: Column(
           children: const [
             Expanded(
