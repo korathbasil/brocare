@@ -1,3 +1,4 @@
+import 'package:client/ui/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,9 +23,14 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
+        textTheme: const TextTheme(
+            bodyText1: TextStyle(color: Colors.white),
+            bodyText2: TextStyle(color: Colors.white)),
+
+        backgroundColor: Colors.black,
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SplashScreen(),
     );
   }
 }
