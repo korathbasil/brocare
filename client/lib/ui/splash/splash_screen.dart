@@ -1,5 +1,5 @@
 import 'package:client/app/core/colors.dart';
-import 'package:client/ui/login/login_screen.dart';
+import 'package:client/ui/private_screens_container/private_screens_container.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(const Duration(milliseconds: 1500), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const LoginScreen()),
+        MaterialPageRoute(builder: (context) => PrivateScreensContainer()),
       );
     });
   }
