@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YZ6F9D3JpRExdNI2kDQ23g+KVmy1xemdlbE7t7wm5xmgm+yiAgC4V57K7xmStHqoadGXXHEYQFB5IjcllkKOOA==",
+  "dgSpecHash": "I7poJxTNoEOesieNdbtmmqTpyF9mo232YqozVIvK4WVg8rB3YbMz5ttJ0hTqsUZIDgSTmFn5h1TnFJKIPdLq7g==",
   "success": true,
-  "projectFilePath": "/home/bazil/server/server.csproj",
+  "projectFilePath": "/home/bazil/Desktop/brocare/server/server.csproj",
   "expectedPackageFiles": [
     "/home/bazil/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/bazil/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

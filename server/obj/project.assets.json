@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/bazil/server/server.csproj",
+      "projectUniqueName": "/home/bazil/Desktop/brocare/server/server.csproj",
       "projectName": "server",
-      "projectPath": "/home/bazil/server/server.csproj",
+      "projectPath": "/home/bazil/Desktop/brocare/server/server.csproj",
       "packagesPath": "/home/bazil/.nuget/packages/",
-      "outputPath": "/home/bazil/server/obj/",
+      "outputPath": "/home/bazil/Desktop/brocare/server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/bazil/.nuget/NuGet/NuGet.Config"
