@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 // Register to DI container
 builder.Services.AddSingleton<Db>();
+// Users
 builder.Services.AddTransient<IUserRepo, UserRepo>();
 builder.Services.AddTransient<UserService>();
 
