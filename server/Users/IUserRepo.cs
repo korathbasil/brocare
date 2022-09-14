@@ -1,7 +1,6 @@
 using MongoDB.Driver;
-using server.Models;
 
-namespace server.Repos;
+namespace server.Users;
 
 public interface IUserRepo
 {

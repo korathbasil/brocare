@@ -1,8 +1,7 @@
 using MongoDB.Driver;
-using server.DataAccess;
-using server.Models;
+using server.Data;
 
-namespace server.Repos;
+namespace server.Users;
 
 public class UserRepo : IUserRepo
 {

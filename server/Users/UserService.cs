@@ -1,7 +1,4 @@
-using server.Models;
-using server.Repos;
-
-namespace server.Services;
+namespace server.Users;
 
 public class UserService
 {

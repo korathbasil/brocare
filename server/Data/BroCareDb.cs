@@ -1,7 +1,7 @@
 using MongoDB.Driver;
-using server.Models;
+using server.Users;
 
-namespace server.DataAccess;
+namespace server.Data;
 
 public class Db
 {

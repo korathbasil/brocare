@@ -1,6 +1,5 @@
-using server.DataAccess;
-using server.Services;
-using server.Repos;
+using server.Data;
+using server.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
