@@ -29,7 +29,7 @@ public class UserController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> createUser(CreateUserDto data)
     {
-        var userId = await _service.createUser(data.firstName, data.lastName, data.email, data.phone, data.password);
+        var userId = await _service.createUser(data.FirstName, data.LastName, data.Email, data.Phone, data.Password);
         return Created($"/users/{userId}", new { userId });
     }
 }
