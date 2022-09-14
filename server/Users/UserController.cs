@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using server.Dtos;
 
 namespace server.Users;
 
