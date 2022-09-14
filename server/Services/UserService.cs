@@ -12,6 +12,11 @@ public class UserService
         _repo = userRepo;
     }
 
+    public Task<List<User>> getAllUsers()
+    {
+        return _repo.find();
+    }
+
     public Task<string> createUser(string firstName, string lastName, string email, string phone, string password)
     {
         var user = new User { FirstName = firstName, LastName = lastName, Email = email, Phone = phone, Password = password };

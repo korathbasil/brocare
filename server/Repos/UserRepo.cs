@@ -1,3 +1,4 @@
+using MongoDB.Driver;
 using server.DataAccess;
 using server.Models;
 
@@ -16,5 +17,10 @@ public class UserRepo : IUserRepo
     {
         await _db.Users.InsertOneAsync(user);
         return user.Id;
+    }
+
+    public Task<List<User>> find()
+    {
+        return _db.Users.FindAsync<User>(_ => true).Result.ToListAsync();
     }
 }

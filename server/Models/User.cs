@@ -8,7 +8,7 @@ public record User
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? Id { get; set; }
+    public string Id { get; set; }
 
     [Required]
     public string FirstName { get; set; }

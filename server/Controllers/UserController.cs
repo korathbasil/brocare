@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Services;
+using server.Models;
 using server.Dtos;
 
 namespace server.Controllers;
@@ -17,10 +18,11 @@ public class UserController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet("hello")]
-    public string GetHelloWorld()
+    [HttpGet]
+    public async Task<List<User>> GetUsers()
     {
-        return "Hello World";
+        var users = await _service.getAllUsers();
+        return users;
     }
 
 
