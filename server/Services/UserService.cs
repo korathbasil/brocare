@@ -12,10 +12,9 @@ public class UserService
         _repo = userRepo;
     }
 
-    public void createUser()
+    public Task<string> createUser(string firstName, string lastName, string email, string phone, string password)
     {
-        var user = new User { FirstName = "Joseph", LastName = "Bizzy" };
-        Console.WriteLine("ASync");
-        _repo.InsertOne(user);
+        var user = new User { FirstName = firstName, LastName = lastName, Email = email, Phone = phone, Password = password };
+        return _repo.InsertOne(user);
     }
 }

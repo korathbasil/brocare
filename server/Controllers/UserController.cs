@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Services;
+using server.Dtos;
 
 namespace server.Controllers;
 
@@ -23,11 +24,10 @@ public class UserController : ControllerBase
     }
 
 
-    [HttpGet]
-    public string createUser()
+    [HttpPost]
+    public async Task<IActionResult> createUser(CreateUserDto data)
     {
-        _service.createUser();
-        Console.Write("Not");
-        return "done";
+        var userId = await _service.createUser(data.firstName, data.lastName, data.email, data.phone, data.password);
+        return Created($"/users/{userId}", new { userId });
     }
 }

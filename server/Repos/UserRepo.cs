@@ -12,9 +12,9 @@ public class UserRepo : IUserRepo
         _db = db;
     }
 
-    public async void InsertOne(User user)
+    public async Task<string> InsertOne(User user)
     {
         await _db.Users.InsertOneAsync(user);
-        return;
+        return user.Id;
     }
 }

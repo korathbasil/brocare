@@ -4,5 +4,5 @@ namespace server.Repos;
 
 public interface IUserRepo
 {
-    void InsertOne(User user);
+    Task<string> InsertOne(User user);
 }
