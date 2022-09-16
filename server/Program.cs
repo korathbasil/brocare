@@ -1,5 +1,6 @@
 using server.Data;
 using server.Users;
+using server.Chats;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,9 @@ builder.Services.AddSingleton<Db>();
 // Users
 builder.Services.AddTransient<IUserRepo, UserRepo>();
 builder.Services.AddTransient<UserService>();
+// Chats
+builder.Services.AddTransient<IChatRepo, ChatRepo>();
+builder.Services.AddTransient<ChatService>();
 
 var app = builder.Build();
 
